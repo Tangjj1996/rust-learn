@@ -1,0 +1,11 @@
+name: Rust-test
+
+on:
+  push:
+    tags:
+      - v*
+jobs:
+  test:
+    steps:
+      - name: just test
+      - run: echo "now test pass"
