@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: just test
-      - run: echo "now test pass"
+        run: echo "now test pass"
