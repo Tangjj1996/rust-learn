@@ -1,4 +1,4 @@
-# Syntax in detail
+# Syntax Detail
 
 - `String::new`, `String` is a string type provided by the standart library, `::new` indicates that `new` is an associated function of the `String` type(an associated function is implemented on a type).
 

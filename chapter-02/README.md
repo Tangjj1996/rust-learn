@@ -1,4 +1,4 @@
-# use cargo
+# Use cargo
 
 - `cargo new` create project with templete. `cargo new --vsc none` don't create version control
 
