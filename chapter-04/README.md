@@ -98,3 +98,36 @@ fn main() {
 }
 ```
 The `five` function has no parameters and defines the type of the return value, but the body of the function is a lonely `5` with no semicolon because it's an expression whose value we want to reutrn.
+
+## Control Flow
+
+- becase `if` is an expression, we can use it on the right side of a `let` statement.
+
+```rust
+fn main() {
+    let condition = true;
+    let number = if condition { 5 } else { 6 };
+
+    println!("The value of number is: {}", number);
+}
+```
+
+Remember that blocks of code evalute to the last expression in them, and numbers by themselves are also expressions. In this case, the value of the whole `if` expression depends on which block of code executes. This means the values that have the potential to be results from each arm of the `if` must be the same type.
+
+- one of the uses of a `loop` is to retry an opration you konw might fail, such as checking whether a thread has completed its job. However, you might need to pass the result of that operation to the rest of your code. To do this, you can add the value you want returned after the `break` expression you use to stop the loop.
+
+```rust
+fn main() {
+    let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            break counter * 2;
+        }
+    };
+
+    println!("The result is {}", result);
+}
+```
