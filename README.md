@@ -7,3 +7,5 @@
 [chapter-02 note](/chapter-02/README.md)
 
 [chapter-03 note](/chapter-03/README.md)
+
+[chapter-04 note](/chapter-04/README.md)

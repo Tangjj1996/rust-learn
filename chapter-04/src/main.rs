@@ -1,10 +1,21 @@
+use std::io;
+
 fn main() {
-    let _x = 5;
+    println!("please enter your fibonacci nth: ");
 
-    let y = {
-        let _x = 3;
-        _x + 1
+    let mut guess = String::new();
+
+    io::stdin()
+        .read_line(&mut guess)
+        .expect("faild to read line");
+
+    let guess: i32 = match guess.trim().parse() {
+        Ok(num) => num,
+        Err(_) => 0,
     };
+    println!("you fibonacci list is:: {}", fibonacci(guess));
+}
 
-    println!("The value of y is: {}", y);
+fn fibonacci(_nth: i32) -> i32 {
+    1
 }
