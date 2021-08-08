@@ -11,3 +11,5 @@
 [chapter-04 note](/chapter-04/README.md)
 
 [chapter-05 node](/chapter-05/README.md)
+
+[chapter-06 node](/chapter-06/README.md)
