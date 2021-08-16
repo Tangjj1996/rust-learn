@@ -10,6 +10,10 @@
 
 [chapter-04 note](/chapter-04/README.md)
 
-[chapter-05 node](/chapter-05/README.md)
+[chapter-05 note](/chapter-05/README.md)
 
-[chapter-06 node](/chapter-06/README.md)
+[chapter-06 note](/chapter-06/README.md)
+
+[chapter-07 note](/chapter-07/README.md)
+
+[chapter-08 note](/chapter-08/README.md)
