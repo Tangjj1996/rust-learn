@@ -1,4 +1,5 @@
 mod lib;
+use lib::{NewsArticle, Summary};
 
 fn main() {
     let p1 = Point { x: 5, y: 10.4 };
@@ -7,14 +8,14 @@ fn main() {
 
     println!("p3.x = {}, p3.y = {}", p3.x, p3.y);
 
-    let article = lib::NewsArticle {
-        headline: String::from("jhhhh"),
-        location: String::from("jhhhh"),
-        author: String::from("jhhhh"),
-        content: String::from("jhhhh"),
+    let article = NewsArticle {
+        headline: String::from("first"),
+        location: String::from("second"),
+        author: String::from("third"),
+        content: String::from("fourth"),
     };
 
-    // println!("This is just hhaa {}", article.summarize())
+    println!("This is just test {}", article.summarize())
 }
 
 struct Point<T, U> {
